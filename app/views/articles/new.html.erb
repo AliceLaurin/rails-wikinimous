@@ -1,0 +1,18 @@
+
+<div class="container">
+  <div class="mt-5 mb-5">
+    <h1>Ajouter un article</h1>
+  </div>
+
+  <div class="mb-3 w-75">
+    <%= form_with model: @article do |f| %>
+      <%= f.label :title, class:"form-label h3" %>
+      <%= f.text_field :title, class:"form-control mb-3"%>
+      <%= f.label :content, class:"form-label h3" %>
+      <%= f.text_area :content, class:"form-control mb-3", rows:"8" %>
+      <%= f.submit class:"my-button rounded text-decoration-none p-3 mt-3" %>
+    <% end %>
+  </div>
+
+
+</div>
